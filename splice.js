@@ -16,8 +16,8 @@ const numeros = [1, 2, 3, 4, 5];
 
 const eliminados = numeros.splice(1, 2);
 
-console.log(eliminados); // Salida: [2, 3]
-console.log(numeros);    // Salida: [1, 4, 5]
+console.log(eliminados);
+console.log(numeros);
 
 
 /*
@@ -29,7 +29,7 @@ const colores = ['rojo', 'azul'];
 
 colores.splice(1, 0, 'verde', 'amarillo');
 
-console.log(colores); // Salida: ['rojo', 'verde', 'amarillo', 'azul']
+console.log(colores);
 
 
 /*
@@ -41,8 +41,8 @@ const letras = ['a', 'b', 'c', 'd'];
 
 const reemplazados = letras.splice(1, 2, 'x', 'y');
 
-console.log(letras);        // Salida: ['a', 'x', 'y', 'd']
-console.log(reemplazados);  // Salida: ['b', 'c']
+console.log(letras);
+console.log(reemplazados);
 
 
 //?Ejercicios para practicar con splice()
@@ -56,6 +56,9 @@ y muestra el array resultante.
 const numeros2 = [10, 20, 30, 40, 50];
 // Elimina los números en las posiciones 2 y 3
 
+const numDelete = numeros2.slice(1, 3)
+
+console.log(numDelete)
 
 /*
 Ejercicio 2: Agregar elementos
@@ -64,3 +67,6 @@ Tienes un array con nombres de frutas. Usa splice() para agregar 'mango' y 'fres
 const frutas = ['manzana', 'plátano', 'uva'];
 // Agrega 'mango' y 'fresa' en la segunda posición
 
+frutas.splice(1, 0, 'mago', 'fresa')
+
+console.log(frutas)

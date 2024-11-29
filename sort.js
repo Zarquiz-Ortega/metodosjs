@@ -16,7 +16,7 @@ const frutas = ['manzana', 'naranja', 'uva', 'plátano'];
 
 frutas.sort();
 
-console.log(frutas); // Salida: ['manzana', 'naranja', 'plátano', 'uva']
+console.log(frutas);
 
 /*
 Ejemplo: Ordenar números
@@ -26,7 +26,7 @@ const numeros = [10, 5, 20, 15];
 
 numeros.sort();
 
-console.log(numeros); // Salida: [10, 15, 20, 5] (orden incorrecto)
+console.log(numeros); // (orden incorrecto)
 
 /*
 Esto sucede porque sort() convierte los números a cadenas. Para ordenarlos correctamente, 
@@ -36,9 +36,7 @@ const numeros2 = [10, 5, 20, 15];
 
 numeros2.sort((a, b) => a - b); // Orden ascendente
 
-console.log(numeros2); // Salida: [5, 10, 15, 20]
-
-
+console.log(numeros2);
 
 /*
 Ejemplo: Ordenar objetos
@@ -65,6 +63,10 @@ Tienes un array de números desordenados. Usa sort() para ordenarlos en orden as
 const numeros3 = [40, 10, 30, 20, 50];
 // Ordena el array de menor a mayor
 
+numeros3.sort((a, b) => a - b)
+
+console.log(numeros3)
+
 
 /*
 Ejercicio 2: Ordenar cadenas en orden inverso
@@ -73,6 +75,10 @@ Tienes un array con nombres de frutas. Usa sort() para ordenarlas en orden alfab
 
 const frutas2 = ['manzana', 'uva', 'plátano', 'naranja'];
 // Ordena las frutas en orden alfabético inverso
+
+frutas2.sort((a, b) => b.localeCompare(a))
+
+console.log(frutas2)
 
 /*
 Ejercicio 3: Ordenar objetos por una propiedad
@@ -85,3 +91,7 @@ const productos = [
     { nombre: 'Zapatos', precio: 30 }
 ];
 // Ordena los productos por precio de menor a mayor
+
+productos.sort((a, b) => a.precio - b.precio)
+
+console.log(productos)

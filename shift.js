@@ -14,8 +14,8 @@ const numeros = [1, 2, 3, 4];
 
 const eliminado = numeros.shift();
 
-console.log(eliminado); // Salida: 1
-console.log(numeros);   // Salida: [2, 3, 4]
+console.log(eliminado); 
+console.log(numeros);   
 
 
 /*
@@ -45,6 +45,11 @@ el primer número y muestra el resultado del array después de la eliminación.
 const numeros2 = [10, 20, 30, 40, 50];
 // Elimina el primer número y muestra el array resultante
 
+const numEliminado = numeros2.shift()
+
+console.log(numEliminado)
+console.log(numeros2)
+
 /*
 Ejercicio 2: Eliminar productos de una lista
 Tienes un array de objetos que representa productos. 
@@ -58,3 +63,8 @@ const productos = [
     { nombre: 'Zapatos', precio: 50 }
 ];
 // Elimina el primer producto y muestra el resultado
+
+const prodEliminado = productos.shift()
+
+console.log(prodEliminado)
+console.log(productos)

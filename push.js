@@ -48,10 +48,16 @@ console.log(personas);
 
 const numeros2 = [];
 // Agrega los números del 1 al 5 usando push()
+numeros2.push(1, 2, 3, 4, 5)
 
+console.log(numeros2)
 
 const productos = [
     { nombre: 'Camiseta', precio: 15 },
     { nombre: 'Pantalón', precio: 30 }
 ];
 // Agrega un nuevo producto al array
+
+productos.push({nombre: 'vestido', precio: 180})
+
+console.log(productos)

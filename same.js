@@ -13,7 +13,7 @@ const numeros = [-1, -2, 3, -4];
 
 const tienePositivos = numeros.some(num => num > 0);
 
-console.log(tienePositivos); // Salida: true
+console.log(tienePositivos);
 
 /*
 Ejemplo: Verificar cadenas largas
@@ -22,7 +22,7 @@ const palabras = ['casa', 'elefante', 'sol', 'girasol'];
 
 const tienePalabraLarga = palabras.some(palabra => palabra.length > 5);
 
-console.log(tienePalabraLarga); // Salida: true
+console.log(tienePalabraLarga);
 
 /*
 Ejemplo: Comprobar objetos en un array
@@ -35,7 +35,7 @@ const usuarios = [
 
 const hayActivos = usuarios.some(usuario => usuario.activo);
 
-console.log(hayActivos); // Salida: true
+console.log(hayActivos);
 
 
 //? Ejercicios para practicar con some()
@@ -43,9 +43,11 @@ console.log(hayActivos); // Salida: true
 Ejercicio 1: Verificar si hay números pares
 Dado el siguiente array de números, usa some() para verificar si hay algún número par.
  */
-const numeros2 = [1, 3, 5, 7, 9];
+const numeros2 = [1, , 5, 7, 9];
 // ¿Hay algún número par?
+const tienePar = numeros2.some(num => num % 2 === 0)
 
+console.log(tienePar)
 /*
 Ejercicio 2: Comprobar edades
 Tienes un array de edades. Usa some() para verificar si hay alguna persona mayor de 18 años.
@@ -53,10 +55,17 @@ Tienes un array de edades. Usa some() para verificar si hay alguna persona mayor
 
 const edades = [12, 15, 16, 10, 20];
 // ¿Alguna edad es mayor de 18?
+const mayorDeEdad = edades.some(edad => edad >= 18)
+
+console.log(mayorDeEdad)
 
 /*
 Ejercicio 3: Verificar palabras con vocal inicial
 Tienes un array de palabras. Usa some() para verificar si alguna empieza con una vocal.
 */
-const palabras2 = ['casa', 'elefante', 'sol', 'árbol'];
+const palabras2 = ['casa', 'elefante', 'sol', 'arbol'];
 // ¿Alguna palabra empieza con una vocal?
+
+const tieneVocal = palabras2.some(palabra => palabra.charAt('a', 'e', 'o', 'i', 'u'))
+
+console.log(tieneVocal)

@@ -45,17 +45,28 @@ console.log(personas);
 Ejercicio 1: Ordenar un objeto por valores
 Dado el siguiente objeto, ordénalo por los valores en orden ascendente:
  */
-const calificaciones = { Jose: 85, Maria: 95, Ana: 90 };
+const calificaciones = {Maria: 100, Jose: 75, Ana: 65 };
 // Ordena este objeto por sus valores
+const cal = Object.entries(calificaciones)
+
+cal.sort(([, valorA], [, valorB]) => valorA - valorB )
+
+const calAsort = Object.fromEntries(cal)
+
+console.log(calAsort)
 
 /*
 Ejercicio 2: Ordenar un array de objetos
 Dado un array de productos, ordénalo por precio de mayor a menor:
  */
 const productos = [
-    { nombre: 'Camisa', precio: 20 },
     { nombre: 'Pantalón', precio: 50 },
-    { nombre: 'Zapatos', precio: 30 }
+    { nombre: 'Zapatos', precio: 30 },
+    { nombre: 'Camisa', precio: 20 },
 ];
 // Ordena los productos por precio descendente
 
+
+productos.sort((a, b) => a.precio - b.precio)
+
+console.log(productos)
