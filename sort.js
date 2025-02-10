@@ -63,11 +63,6 @@ Tienes un array de números desordenados. Usa sort() para ordenarlos en orden as
 const numeros3 = [40, 10, 30, 20, 50];
 // Ordena el array de menor a mayor
 
-numeros3.sort((a, b) => a - b)
-
-console.log(numeros3)
-
-
 /*
 Ejercicio 2: Ordenar cadenas en orden inverso
 Tienes un array con nombres de frutas. Usa sort() para ordenarlas en orden alfabético inverso.
@@ -75,10 +70,6 @@ Tienes un array con nombres de frutas. Usa sort() para ordenarlas en orden alfab
 
 const frutas2 = ['manzana', 'uva', 'plátano', 'naranja'];
 // Ordena las frutas en orden alfabético inverso
-
-frutas2.sort((a, b) => b.localeCompare(a))
-
-console.log(frutas2)
 
 /*
 Ejercicio 3: Ordenar objetos por una propiedad
@@ -92,6 +83,3 @@ const productos = [
 ];
 // Ordena los productos por precio de menor a mayor
 
-productos.sort((a, b) => a.precio - b.precio)
-
-console.log(productos)
