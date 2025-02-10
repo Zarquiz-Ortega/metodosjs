@@ -6,7 +6,6 @@ A diferencia de slice(), este método modifica directamente el array original.
 
 //?  array.splice(inicio, cantidad, item1, item2, ..., itemN);
 
-
 /*
 Ejemplo básico: Eliminar elementos
 Si quieres eliminar elementos de un array:
@@ -56,9 +55,6 @@ y muestra el array resultante.
 const numeros2 = [10, 20, 30, 40, 50];
 // Elimina los números en las posiciones 2 y 3
 
-const numDelete = numeros2.slice(1, 3)
-
-console.log(numDelete)
 
 /*
 Ejercicio 2: Agregar elementos
@@ -66,7 +62,3 @@ Tienes un array con nombres de frutas. Usa splice() para agregar 'mango' y 'fres
  */
 const frutas = ['manzana', 'plátano', 'uva'];
 // Agrega 'mango' y 'fresa' en la segunda posición
-
-frutas.splice(1, 0, 'mago', 'fresa')
-
-console.log(frutas)
