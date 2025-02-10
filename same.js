@@ -45,9 +45,7 @@ Dado el siguiente array de números, usa some() para verificar si hay algún nú
  */
 const numeros2 = [1, , 5, 7, 9];
 // ¿Hay algún número par?
-const tienePar = numeros2.some(num => num % 2 === 0)
 
-console.log(tienePar)
 /*
 Ejercicio 2: Comprobar edades
 Tienes un array de edades. Usa some() para verificar si hay alguna persona mayor de 18 años.
@@ -55,9 +53,7 @@ Tienes un array de edades. Usa some() para verificar si hay alguna persona mayor
 
 const edades = [12, 15, 16, 10, 20];
 // ¿Alguna edad es mayor de 18?
-const mayorDeEdad = edades.some(edad => edad >= 18)
 
-console.log(mayorDeEdad)
 
 /*
 Ejercicio 3: Verificar palabras con vocal inicial
@@ -65,7 +61,3 @@ Tienes un array de palabras. Usa some() para verificar si alguna empieza con una
 */
 const palabras2 = ['casa', 'elefante', 'sol', 'arbol'];
 // ¿Alguna palabra empieza con una vocal?
-
-const tieneVocal = palabras2.some(palabra => palabra.charAt('a', 'e', 'o', 'i', 'u'))
-
-console.log(tieneVocal)
