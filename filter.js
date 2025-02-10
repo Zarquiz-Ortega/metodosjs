@@ -28,9 +28,7 @@ console.log(mayoresDeEdad);
 
 const numeros2 = [5, -12, 8, -130, 44, -3];
 // Filtra los números negativos
-const numerosNegativos = numeros2.filter((numeros) => numeros < 0);
 
-console.log(numerosNegativos);
 
 //! EJERCICIO 2
 const productos = [
@@ -41,6 +39,4 @@ const productos = [
 ];
 // Filtra los productos cuyo precio es mayor o igual a 20
 
-const filtroProductos = productos.filter((productos) => productos.precio >= 20);
 
-console.log(filtroProductos);
