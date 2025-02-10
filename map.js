@@ -41,9 +41,7 @@ La fórmula para la conversión es: F = C x 1.8 + 32
 
 const celsius = [0, 20, 30, 40];
 // Convierte las temperaturas a Fahrenheit
-const fahrenheit = celsius.map(celsius => (celsius * 1.8 ) +32 )
 
-console.log(fahrenheit)
 /*
 Ejercicio 2: Calcular precios con impuestos
 Tienes un array de objetos que representa productos en una tienda. 
@@ -57,9 +55,3 @@ const productos = [
     { nombre: 'Zapatos', precio: 300 }
 ];
 // Calcula los precios con impuestos
-const impuestoAplicado = productos.map(producto => ({
-    ...producto,
-    precio : (producto.precio * 0.16) + producto.precio
-}))
-
-console.log(impuestoAplicado)
