@@ -47,13 +47,7 @@ Dado el siguiente objeto, ordénalo por los valores en orden ascendente:
  */
 const calificaciones = {Maria: 100, Jose: 75, Ana: 65 };
 // Ordena este objeto por sus valores
-const cal = Object.entries(calificaciones)
 
-cal.sort(([, valorA], [, valorB]) => valorA - valorB )
-
-const calAsort = Object.fromEntries(cal)
-
-console.log(calAsort)
 
 /*
 Ejercicio 2: Ordenar un array de objetos
@@ -65,8 +59,3 @@ const productos = [
     { nombre: 'Camisa', precio: 20 },
 ];
 // Ordena los productos por precio descendente
-
-
-productos.sort((a, b) => a.precio - b.precio)
-
-console.log(productos)
