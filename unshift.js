@@ -54,9 +54,6 @@ en ese orden, al inicio del array. Muestra el array final.
 const nombres = [];
 // Agrega los nombres al inicio del array
 
-nombres.unshift('Maria', 'Luis', 'Carmen' )
-
-console.log(nombres)
 
 /*
 Ejercicio 2: Agregar productos nuevos a una tienda
@@ -68,7 +65,3 @@ const productos = [
     { nombre: 'Pantalón', precio: 30 }
 ];
 // Agrega un nuevo producto al inicio del array
-
-productos.unshift({nombre: 'vestido', precio: 180})
-
-console.log(productos)
