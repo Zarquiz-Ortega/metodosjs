@@ -49,10 +49,7 @@ Tienes un array con números del 1 al 10. Usa slice() para extraer los primeros 
 const numeros4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // Extrae los primeros 5 elementos
 
-const newArry = numeros4.slice(0,5)
 
-console.log(newArry)
-console.log(numeros4)
 
 /*
 Ejercicio 2: Seleccionar los últimos 3 elementos
@@ -62,5 +59,3 @@ Tienes un array con nombres de frutas. Usa slice() para obtener un nuevo array c
 const frutas = ['manzana', 'plátano', 'uva', 'naranja', 'kiwi', 'sandía'];
 // Extrae los últimos 3 elementos
 
-console.log(frutas.slice(-3))
-console.log(frutas)
