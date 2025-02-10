@@ -28,10 +28,7 @@ console.log(personas);
 //! EJERCICIO 1
 const numeros2 = [10, 20, 30, 40, 50];
 // Elimina el último número y muestra el array resultante
-const numEliminado = numeros2.pop()
 
-console.log(numEliminado);
-console.log(numeros2);
 
 //! EJERCICIO 2
 
@@ -42,7 +39,3 @@ const productos = [
 ];
 // Elimina el último producto y muestra el array resultante
 
-const prodEliminado = productos.pop()
-
-console.log(prodEliminado);
-console.log(productos);
